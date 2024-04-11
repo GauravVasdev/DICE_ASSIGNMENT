@@ -1,0 +1,17 @@
+server:
+  port: 8180
+
+spring:
+  application:
+    name: common-service
+
+weather:
+  apiKey: '7a850cadd2mshed69e6b6d3449c8p19b74cjsn3eeba7dea2d1'
+  apiHost: 'forecast9.p.rapidapi.com'
+
+
+twitter:
+  consumerKey: 'pZvxwP6PM1GTTzGh3zqbztekf'
+  consumerSecret: 'XWtQNbFTneWradZ0Kc2F20Er3ADIYogrHpFrE7TFOlTSWiI7rh'
+  accessToken: '1778349316723142656-XXTwvdTsuIKY2KXaFkLerRksanvw2r'
+  accessTokenSecret: 'VPNbnSoetwQpf5vpUT7HK53B6q6Nm6leqKQEZhOsxmOdU'
