@@ -1,3 +1,5 @@
 rootProject.name = 'assignment'
 include 'common-utility-service'
+include 'edge-service'
+include 'user-service'
 

@@ -1,0 +1,21 @@
+server:
+  port: 8130
+
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: "postgres" #klondike
+    url: "jdbc:postgresql://localhost:5432/user_service_dice_db" #jdbc:mysql://localhost:3306/klondike_investment_service_db
+    password: "@@Qwe111" #Klondike@1234
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql : true
+    hibernate:
+      ddl-auto: update
+    show-sql: true

@@ -1,0 +1,35 @@
+server:
+  port: 8150
+
+spring:
+  application:
+    name: edge-service
+  main:
+    allow-circular-references: true
+    web-application-type: reactive
+  cloud:
+    gateway:
+      -default-filters:
+        - name: AuthenticationFilter
+      routes:
+        - id: common-utility-service
+          uri: http://localhost:8180/
+          predicates:
+            - Path=/common/**
+        - id: user-service
+          uri: http://localhost:8130/
+          predicates:
+            - Path=/users/**
+service:
+  user:
+    name: user-service
+    host: localhost
+    port: 8130
+    url: ${service.user.host}:${service.user.port}
+
+
+urls:
+  unfiltered:
+    -  "/users/login"
+  filtered:
+    -
