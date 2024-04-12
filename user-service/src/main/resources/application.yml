@@ -8,9 +8,9 @@ spring:
       port: 6379
   datasource:
     driver-class-name: org.postgresql.Driver
-    username: "postgres" #klondike
-    url: "jdbc:postgresql://localhost:5432/user_service_dice_db" #jdbc:mysql://localhost:3306/klondike_investment_service_db
-    password: "@@Qwe111" #Klondike@1234
+    username: "postgres"
+    url: "jdbc:postgresql://localhost:5432/user_service_dice_db"
+    password: "@@Qwe111"
   jpa:
     properties:
       hibernate:

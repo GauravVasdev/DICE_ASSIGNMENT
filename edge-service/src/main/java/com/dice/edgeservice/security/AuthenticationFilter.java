@@ -5,7 +5,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.function.Predicate;
 
 import com.dice.edgeservice.client.UserAuthenticationAPI;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
 import org.springframework.context.annotation.Lazy;
